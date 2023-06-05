@@ -1,12 +1,19 @@
 package io.javabrains.courseapidata.topics;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Topic {
 
     @Id
+//    @SequenceGenerator(
+//            name = "topic_id_sequence",
+//            sequenceName = "topic_id_sequence"
+//    )
+//    @GeneratedValue(
+//            strategy = GenerationType.SEQUENCE,
+//            generator = "topic_id_sequence"
+//    )
     private String id;
     private  String name;
     private String description;
